@@ -1,0 +1,43 @@
+# BountyHunt Configuration by Woktalvv
+# World border: 7.5k x 7.5k (15,000 max distance)
+
+# Preparation time in seconds (15 minutes = 900 seconds)
+prep-time: 900
+
+# Base hunt time in seconds (15 minutes minimum even at 0 distance)
+base-hunt-time: 900
+
+# Seconds added per block distance
+distance-multiplier: 0.75
+
+# Death penalty: if true, the hunter dies if they fail
+death-penalty: true
+
+# Loot reward: if true, the hunter gets the target's loot on success
+loot-reward: true
+
+# BossBar settings (HUNTER ONLY - shows distance + dimension)
+bossbar:
+  color: RED
+  style: SEGMENTED_10
+  title: "&c&lHUNT ACTIVE &7| &fDistance: &c{distance}m &7| &fWorld: &e{dimension}"
+
+# Anonymous join/leave messages (shown instead of real names)
+anonymous-messages:
+  join: "&7A random player joined the game"
+  leave: "&7A random player left the game"
+
+# Messages (use & for color codes)
+messages:
+  hunt-started: "&aYou have started a bounty hunt! A target has been selected. You have no idea who it is..."
+  hunt-started-target: "&c&lWARNING! &cYou are being hunted by someone! You have {prepTime} minutes to prepare. Watch your back..."
+  hunt-time-up: "&a&lPREP TIME OVER! &aThe hunt begins! You have {huntTime} to find and kill your target."
+  hunter-won: "&a&lVICTORY! &aYou eliminated your target and claimed their loot! &7(Target was: &f{target}&7)"
+  hunter-failed: "&c&lFAILED! &cYou failed to kill your target in time. Death is your punishment!"
+  target-killed: "&c&lDEFEATED! &cYou were hunted down and eliminated! &7(Hunter was: &f{hunter}&7)"
+  target-survived: "&a&lSURVIVED! &aYour hunter failed to kill you in time!"
+  hunt-ended-hunter-left: "&a&lHUNT ENDED! &aYour hunter logged off. The hunt is over."
+  not-enough-players: "&cNot enough players online to start a hunt."
+  already-hunting: "&cYou are already hunting someone!"
+  no-active-hunts: "&cNo active bounty hunts."
+  hunt-cancelled: "&cThe bounty hunt has been cancelled."
